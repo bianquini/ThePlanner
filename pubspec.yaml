@@ -1,0 +1,48 @@
+name: the_planner
+description: "Organizador financeiro pessoal — ThePlanner"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Estado
+  flutter_riverpod: ^2.6.1
+
+  # Gráficos
+  fl_chart: ^0.70.2
+
+  # Formatação de moeda e data
+  intl: ^0.19.0
+
+  # Google Fonts (Nunito)
+  google_fonts: ^6.2.1
+
+  # UUID para IDs únicos
+  uuid: ^4.5.1
+
+  # Ícones extras
+  iconsax: ^0.0.8
+
+  # Swipe actions nas transações
+  flutter_slidable: ^3.1.1
+
+  # Firebase, Firestore & Google Auth
+  firebase_core: ^3.13.0
+  firebase_auth: ^5.5.2
+  cloud_firestore: ^5.6.0
+  google_sign_in: ^6.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
