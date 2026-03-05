@@ -43,8 +43,8 @@ O build release requer o keystore em `android/theplanner-release.jks` e o arquiv
 
 **Estrutura do `android/key.properties`:**
 ```properties
-storePassword=theplanner2026
-keyPassword=theplanner2026
+storePassword=SUA_SENHA_AQUI
+keyPassword=SUA_SENHA_AQUI
 keyAlias=theplanner
 storeFile=../theplanner-release.jks
 ```
@@ -302,6 +302,7 @@ if (kDebugMode) {
 powershell -ExecutionPolicy Bypass -File tool/get_sha256.ps1
 
 # SHA-1 do keystore DEBUG (para registrar no Firebase se necessário)
+# Nota: senha "android" é o padrão público do debug.keystore do Android SDK
 & "C:\Program Files\Android\Android Studio\jbr\bin\keytool.exe" `
   -list -v `
   -keystore "$env:USERPROFILE\.android\debug.keystore" `
